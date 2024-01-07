@@ -47,6 +47,7 @@ export class UserTableComponent {
     this.initializeForm();
   }
 
+  // Method to initialize the form using FormBuilder
   initializeForm() {
     this.editForm = this.fb.group({
       firstName: ['', Validators.required],
@@ -56,6 +57,7 @@ export class UserTableComponent {
     });
   }
 
+  // Method to set form values based on a User object
   setFormValues(user: User) {
     this.editForm.patchValue({
       firstName: user.firstName,
@@ -65,6 +67,7 @@ export class UserTableComponent {
     });
   }
 
+  // Method triggered on form submission
   onSubmit() {
       if (this.editForm.valid && this.expandedElement) {
         const editedData = this.editForm.value;
@@ -84,7 +87,8 @@ export class UserTableComponent {
         });
       }
     }   
-  
+    
+    // Method to reset the form and collapse the expanded element on cancel
     onCancel() {
       this.editForm.reset();
       this.expandedElement = null;

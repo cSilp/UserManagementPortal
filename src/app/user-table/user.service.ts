@@ -12,6 +12,6 @@ export class UserService {
   constructor(private httpClient: HttpClient) {}
 
   public getUsers() {
-    return this.httpClient.get<FetchUserResponse>(this.usersApi);debugger
+    return this.httpClient.get<FetchUserResponse>(this.usersApi);
   }
 }
