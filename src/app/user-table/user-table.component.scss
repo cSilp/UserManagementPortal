@@ -1,0 +1,110 @@
+.header {
+    background: linear-gradient(to right, #0a5db0, #34495e);
+    color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+
+    .custom-header {
+        margin: 0;
+        padding: 20px 40px;
+        font-weight: 500;
+    }
+}
+
+.user-table {
+    border: 1px solid #e0e0e0;
+    padding: 40px;
+}
+
+.edit-details-form {
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+
+    .input {
+        margin-left: 20px;
+        height: 35px;
+        width: 50%;
+        outline-color: #5eafec61;
+        border: 1px solid #cfcccc;
+        border-radius: 4px;
+    }
+}
+
+.form-btn {
+    width: 120px;
+    height: 32px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    background: linear-gradient(to right, #0a5db0, #34495e);
+    border: none;
+    color: white;
+}
+
+.mat-spinner-color::ng-deep circle {
+    stroke: #FFFFFF !important;
+}
+
+.spinner{
+    margin-left: 40px;
+}
+.cancel-btn {
+    background: #adadad;
+    margin-left: 20px;
+}
+
+.form-rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-row {
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+}
+
+.button-row {
+    margin: 10px 0px 5px;
+    display: flex;
+}
+
+.input-label {
+    display: block;
+    width: 20%;
+}
+
+tr.detail-row {
+    height: 0;
+}
+
+.element-row td {
+    cursor: pointer;
+    border-bottom-width: 0;
+}
+
+.element-detail {
+    overflow: hidden;
+    display: flex;
+}
+
+.mat-column-expand {
+    width: 1px;
+}
+
+.color {
+    background-color: #f3f6ff;
+}
