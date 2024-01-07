@@ -1,6 +1,5 @@
 import { createAction, props } from "@ngrx/store";
 import { User } from "../user-table/user-table.model";
-// import { User } from "../../users/user.model";
 
 export const fetchUsers = createAction(
     '[Users] Init'
